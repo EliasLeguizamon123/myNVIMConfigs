@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
     	use 'neovim/nvim-lspconfig' -- LSP
     	use 'L3MON4D3/LuaSnip' -- Snippet engine
 	use 'm4xshen/autoclose.nvim'
+	use 'nvim-tree/nvim-web-devicons'
 	use {
   		'nvim-lualine/lualine.nvim',
   		requires = { 'kyazdani42/nvim-web-devicons', opt = true }

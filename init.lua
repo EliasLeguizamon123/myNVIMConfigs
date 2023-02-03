@@ -10,3 +10,5 @@ require('plugins/lspconfig')
 require('plugins/lualine')
 require('plugins/autoclose')
 
+
+vim.opt.relativenumber = true

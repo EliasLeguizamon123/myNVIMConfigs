@@ -4,8 +4,7 @@ require('nvim-tree').setup({
 	view = {
 		width = 30,
 		mappings = {
-			{ key = "b", action = "" }
+			{ key = "b", action = "dir_up" }
 		}
 	},
 })
---vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
