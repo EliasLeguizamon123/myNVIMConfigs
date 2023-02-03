@@ -7,3 +7,6 @@ require('plugins/barbar')
 require('plugins/cursorline')
 require('plugins/dashboard')
 require('plugins/lspconfig')
+require('plugins/lualine')
+require('plugins/autoclose')
+
