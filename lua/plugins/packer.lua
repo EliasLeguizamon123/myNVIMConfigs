@@ -11,6 +11,13 @@ return require('packer').startup(function(use)
 	use 'romgrk/barbar.nvim'
 	use 'yamatsum/nvim-cursorline'
 	use 'glepnir/dashboard-nvim'
+	use 'nvim-lua/plenary.nvim' -- Common utilities
+    	use 'onsails/lspkind-nvim' -- vscode-like pictograms
+    	use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+    	use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+    	use 'hrsh7th/nvim-cmp' -- Completion
+    	use 'neovim/nvim-lspconfig' -- LSP
+    	use 'L3MON4D3/LuaSnip' -- Snippet engine
 	use({
   		"utilyre/barbecue.nvim",
   		tag = "*",
