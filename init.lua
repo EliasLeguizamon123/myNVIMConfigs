@@ -9,6 +9,6 @@ require('plugins/dashboard')
 require('plugins/lspconfig')
 require('plugins/lualine')
 require('plugins/autoclose')
-
+require('plugins/pluffie')
 
 vim.opt.relativenumber = true

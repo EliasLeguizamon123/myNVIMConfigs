@@ -17,7 +17,7 @@ local config = {
     }
 }
 
-vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>" ,{silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<C-b>", ":NvimTreeToggle<cr>" ,{silent = true, noremap = true})
 require('nvim-tree').setup(config)
 
 local lib = require("nvim-tree.lib")
@@ -68,3 +68,7 @@ local function vsplit_preview()
     -- Finally refocus on tree if it was lost
     view.focus()
 end
+
+local function open_nvim_tree()
+	require("nvim-tree.api").tree.open()
+  end
