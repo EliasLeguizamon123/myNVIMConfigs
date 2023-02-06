@@ -27,9 +27,17 @@ return require('packer').startup(function(use)
 	use 'windwp/nvim-ts-autotag' -- Auto close tags
 	use 'nvim-treesitter/nvim-treesitter' -- treesitter
 	use {
+  		'nvim-telescope/telescope.nvim', tag = '0.1.1',
+  		requires = { {'nvim-lua/plenary.nvim'} }
+	} -- telescope for find files
+	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
+	use {
+        	'nvim-telescope/telescope-file-browser.nvim', -- File manipulation
+        	requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    	}
 	use({
 		"utilyre/barbecue.nvim",
 		tag = "*",

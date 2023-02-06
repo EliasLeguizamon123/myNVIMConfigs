@@ -9,6 +9,7 @@ require('plugins/lualine')
 require('plugins/autoclose')
 require('plugins/pluffie')
 require('plugins/alpha')
+require('plugins/telescope')
 
 
 -- try basic conf
