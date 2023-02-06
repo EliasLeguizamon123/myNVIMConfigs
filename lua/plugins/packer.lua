@@ -10,32 +10,35 @@ return require('packer').startup(function(use)
 	use { "SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig" } -- tabs up
 	use 'romgrk/barbar.nvim'  -- tabs up
 	use 'yamatsum/nvim-cursorline' -- mark similar words
-	use 'glepnir/dashboard-nvim' -- Screen init
+	use {
+	  'goolord/alpha-nvim',
+	  requires = { 'nvim-tree/nvim-web-devicons' },
+    }
 	use 'nvim-lua/plenary.nvim' -- Common utilities
-    	use 'onsails/lspkind-nvim' -- vscode-like pictograms
-    	use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
-    	use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-    	use 'hrsh7th/nvim-cmp' -- Completion
-    	use 'neovim/nvim-lspconfig' -- LSP
-    	use 'L3MON4D3/LuaSnip' -- Snippet engine
+	use 'onsails/lspkind-nvim' -- vscode-like pictograms
+	use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+	use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+	use 'hrsh7th/nvim-cmp' -- Completion
+	use 'neovim/nvim-lspconfig' -- LSP
+	use 'L3MON4D3/LuaSnip' -- Snippet engine
 	use 'm4xshen/autoclose.nvim'  -- Auto close [] {} '' ""
 	use 'nvim-tree/nvim-web-devicons' -- Icons
 	use 'pluffie/neoproj' -- Open projects
 	use 'windwp/nvim-ts-autotag' -- Auto close tags
 	use 'nvim-treesitter/nvim-treesitter' -- treesitter
 	use {
-  		'nvim-lualine/lualine.nvim',
-  		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+		'nvim-lualine/lualine.nvim',
+		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
 	use({
-  		"utilyre/barbecue.nvim",
-  		tag = "*",
-  		requires = {
-    			"SmiteshP/nvim-navic",
-    			"nvim-tree/nvim-web-devicons", -- optional dependency
-  		},
-  		config = function()
+		"utilyre/barbecue.nvim",
+		tag = "*",
+		requires = {
+				"SmiteshP/nvim-navic",
+				"nvim-tree/nvim-web-devicons", -- optional dependency
+		},
+		config = function()
 			require("barbecue").setup()
-  		end,
+		end,
 	})
 end)
