@@ -12,6 +12,7 @@ require('plugins/alpha')
 require('plugins/telescope')
 require('plugins/null')
 require('plugins/lspsaga')
+require('plugins/blankline')
 
 -- try basic conf
 --vim.g.mapleader = ','
@@ -32,4 +33,6 @@ vim.keymap.set('n', '<C-s>', ':w<CR>', {noremap = true, silent = true})
 -- move up with alt up
 vim.keymap.set('n', '<A-Up>', ':m -2<CR>', {noremap = true, silent = true})
 -- mode down with alt down
-vim.keymap.set('n', '<A-Down>', ':m -1<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', '<A-Down>', ':m +1<CR>', {noremap = true, silent = true})
+-- close on esc
+vim.keymap.set('n', '<esc>', ':q!<CR>', {noremap = true, silent = true})
