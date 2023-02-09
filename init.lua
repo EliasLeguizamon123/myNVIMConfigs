@@ -10,6 +10,8 @@ require('plugins/autoclose')
 require('plugins/pluffie')
 require('plugins/alpha')
 require('plugins/telescope')
+require('plugins/null')
+require('plugins/lspsaga')
 
 -- try basic conf
 --vim.g.mapleader = ','
@@ -24,6 +26,7 @@ vim.opt.gdefault = true
 
 
 -- shorcuts
+
 -- save in ctrl + s
 vim.keymap.set('n', '<C-s>', ':w<CR>', {noremap = true, silent = true})
 -- move up with alt up

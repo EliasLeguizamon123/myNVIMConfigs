@@ -27,6 +27,11 @@ return require('packer').startup(function(use)
 	use 'windwp/nvim-ts-autotag' -- Auto close tags
 	use 'nvim-treesitter/nvim-treesitter' -- treesitter
 	use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics
+	use { 
+        'glepnir/lspsaga.nvim',    -- LSP UI for different functionalities
+        branch = 'main',
+        requires = 'nvim-tree/nvim-web-devicons'
+    }
 	use {
   		'nvim-telescope/telescope.nvim', tag = '0.1.1',
   		requires = { {'nvim-lua/plenary.nvim'} }
