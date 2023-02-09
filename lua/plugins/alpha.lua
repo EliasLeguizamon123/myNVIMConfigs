@@ -31,6 +31,13 @@ dashboard.section.header.val = {
 	'--------------- life before death strength before weakness journey before destination --------------',
 }
 
+dashboard.section.buttons.val = {
+			dashboard.button("e", "	>	New file", ":ene <BAR> startinsert <CR>"),
+			dashboard.button("f", "󰮗	>	Find file", ":cd $HOME/Desktop/work | :Telescope<CR>"),
+			dashboard.button("r", "	>	Recent file", ":Telescope oldfiles<CR>"),
+			dashboard.button("q", "	>	Close nvim", ":q!<CR>"),
+}
+
 dashboard.section.footer.val = {
   version,
 }

@@ -1,6 +1,5 @@
 local status, nvim_lsp = pcall(require, "lspconfig")
 if (not status) then return end
-
 local protocol = require('vim.lsp.protocol')
 
 local augroup_format = vim.api.nvim_create_augroup("Format", { clear = true })
@@ -30,7 +29,7 @@ local on_attach = function(client, bufnr)
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
     --buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
-    buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+    buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)	
     --buf_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
     --buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
 

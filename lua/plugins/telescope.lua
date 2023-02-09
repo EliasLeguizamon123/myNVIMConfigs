@@ -40,7 +40,7 @@ telescope.setup({
 
 telescope.load_extension("file_browser")
 
-vim.keymap.set('n', '<leader>ff',
+vim.keymap.set('n', 'ff',
     function()
         builtin.find_files({
             no_ignore = false,
