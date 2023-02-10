@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
 	use 'nvim-treesitter/nvim-treesitter' -- treesitter
 	use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics
 	use "lukas-reineke/indent-blankline.nvim" -- Indent blanklines
+	use 'AckslD/swenv.nvim' -- Switch python venvs
 	use { 
         'glepnir/lspsaga.nvim',    -- LSP UI for different functionalities
         branch = 'main',

@@ -71,7 +71,18 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Python language server
 nvim_lsp.pyright.setup {
-    on_attach = on_attach
+    on_attach = on_attach,
+	settings = {
+		python = {
+			analysis = {
+				autoSearchPaths = true,
+				autoImportCompletions = true,
+				diagnosticMode = 'openFilesOnly',
+				useLibraryCodeForTypes = true,
+				typeCheckingMode = 'off'
+			}
+		}
+	}
 }
 
 -- Typescript language server
@@ -85,12 +96,12 @@ nvim_lsp.tsserver.setup {
 -- Nvim LSP
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics, {
-    underline = true,
-    update_in_insert = false,
-    virtual_text = { spacing = 4, prefix = "●" },
-    severity_sort = true,
-}
+    	vim.lsp.diagnostic.on_publish_diagnostics, {
+    	underline = true,
+    	update_in_insert = false,
+    	virtual_text = { spacing = 4, prefix = "●" },
+    	severity_sort = true,
+	}
 )
 
 -- Diagnostic symbols in the sign column (gutter)

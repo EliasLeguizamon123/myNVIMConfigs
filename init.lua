@@ -13,6 +13,8 @@ require('plugins/telescope')
 require('plugins/null')
 require('plugins/lspsaga')
 require('plugins/blankline')
+require('plugins/snippet')
+require('plugins/swenv')
 
 -- try basic conf
 --vim.g.mapleader = ','

@@ -3,8 +3,8 @@ local cmd = vim.cmd
 
 opt.termguicolors = true
 opt.list = true
-opt.listchars:append "eol:↴"
-opt.listchars:append "space:⋅"
+opt.listchars:append "eol:"
+opt.listchars:append "space:."
 
 cmd [[highlight IndentBlanklineIndent1 guifg=#BF616A gui=nocombine]]
 cmd [[highlight IndentBlanklineIndent2 guifg=#D08770 gui=nocombine]]
@@ -17,7 +17,7 @@ require("indent_blankline").setup {
     show_current_context = true,
     show_current_context_start = true,
 	space_char_blankline = " ",
-	show_end_of_line = true,
+	show_end_of_line = false,
 	char_highlight_list = {
 		"IndentBlanklineIndent1",
 		"IndentBlanklineIndent2",
