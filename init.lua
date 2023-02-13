@@ -15,6 +15,8 @@ require('plugins/lspsaga')
 require('plugins/blankline')
 require('plugins/snippet')
 require('plugins/swenv')
+require('plugins/colorizer')
+--require('plugins/cosmic')
 
 -- try basic conf
 --vim.g.mapleader = ','

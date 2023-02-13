@@ -27,7 +27,9 @@ return require('packer').startup(function(use)
 	use 'windwp/nvim-ts-autotag' -- Auto close tags
 	use 'nvim-treesitter/nvim-treesitter' -- treesitter
 	use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics
-	use "lukas-reineke/indent-blankline.nvim" -- Indent blanklines
+	use 'lukas-reineke/indent-blankline.nvim' -- Indent blanklines
+	use 'NvChad/nvim-colorizer.lua' -- add color to #HEXA
+	use "rafamadriz/friendly-snippets" -- for more snippets
 	use 'AckslD/swenv.nvim' -- Switch python venvs
 	use { 
         'glepnir/lspsaga.nvim',    -- LSP UI for different functionalities
@@ -39,6 +41,13 @@ return require('packer').startup(function(use)
   		requires = { {'nvim-lua/plenary.nvim'} }
 	} -- telescope for find files
 	use {
+ 		'm-demare/hlargs.nvim', -- Highlight arguments, definitions and usages
+  		requires = { 'nvim-treesitter/nvim-treesitter' },
+		config = function()
+			require('hlargs').setup()
+		end
+	}
+	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
@@ -47,14 +56,18 @@ return require('packer').startup(function(use)
         	requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     	}
 	use({
-		"utilyre/barbecue.nvim",
-		tag = "*",
-		requires = {
-				"SmiteshP/nvim-navic",
-				"nvim-tree/nvim-web-devicons", -- optional dependency
-		},
-		config = function()
-			require("barbecue").setup()
-		end,
-	})
+    	'CosmicNvim/cosmic-ui',
+    	requires = { 'MunifTanjim/nui.nvim', 'nvim-lua/plenary.nvim' }
+  	})
+	--use({
+	--	"utilyre/barbecue.nvim",
+	--	tag = "*",
+	--	requires = {
+	--			"SmiteshP/nvim-navic",
+	--			"nvim-tree/nvim-web-devicons", -- optional dependency
+	--	},
+	--	config = function()
+	--		require("barbecue").setup()
+	--	end,
+	--})
 end)
