@@ -44,3 +44,7 @@ vim.keymap.set('n', '<A-Up>', ':m -2<CR>', {noremap = true, silent = true})
 vim.keymap.set('n', '<A-Down>', ':m +1<CR>', {noremap = true, silent = true})
 -- close on esc
 vim.keymap.set('n', '<esc>', ':q!<CR>', {noremap = true, silent = true})
+-- Indent
+vim.keymap.set('n', '<TAB>', '>>', {noremap = true, silent = true})
+-- Remove Indent
+vim.keymap.set('n', '<S-TAB>', '<<', {noremap = true, silent = true})
