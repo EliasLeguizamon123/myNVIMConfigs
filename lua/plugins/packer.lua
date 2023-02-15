@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
 	  'goolord/alpha-nvim',
 	  requires = { 'nvim-tree/nvim-web-devicons' },
     }
+	use "terrortylor/nvim-comment" -- Comment lines of code with <C-ku> <C-kc>
 	use 'nvim-lua/plenary.nvim' -- Common utilities
 	use 'onsails/lspkind-nvim' -- vscode-like pictograms
 	use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words

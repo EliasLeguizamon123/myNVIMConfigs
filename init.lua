@@ -1,3 +1,8 @@
+-- try basic conf
+vim.g.mapleader = ','
+
+
+
 require('plugins/packer')
 require('plugins/nord')
 require('plugins/tree')
@@ -16,10 +21,9 @@ require('plugins/blankline')
 require('plugins/snippet')
 require('plugins/swenv')
 require('plugins/colorizer')
+require('plugins/comment')
 --require('plugins/cosmic')
 
--- try basic conf
---vim.g.mapleader = ','
 
 vim.opt.relativenumber = true
 vim.opt.tabstop = 4
