@@ -23,6 +23,7 @@ require('plugins/swenv')
 require('plugins/colorizer')
 require('plugins/comment')
 --require('plugins/cosmic')
+require('plugins/wilder')
 
 
 vim.opt.relativenumber = true

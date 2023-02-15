@@ -60,6 +60,9 @@ return require('packer').startup(function(use)
     	'CosmicNvim/cosmic-ui',
     	requires = { 'MunifTanjim/nui.nvim', 'nvim-lua/plenary.nvim' }
   	})
+	use {
+  		'gelguy/wilder.nvim'
+	}
 	--use({
 	--	"utilyre/barbecue.nvim",
 	--	tag = "*",
