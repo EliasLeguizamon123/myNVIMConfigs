@@ -25,7 +25,6 @@ require('plugins/comment')
 --require('plugins/cosmic')
 require('plugins/wilder')
 
-
 vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -49,3 +48,8 @@ vim.keymap.set('n', '<esc>', ':q!<CR>', {noremap = true, silent = true})
 vim.keymap.set('n', '<TAB>', '>>', {noremap = true, silent = true})
 -- Remove Indent
 vim.keymap.set('n', '<S-TAB>', '<<', {noremap = true, silent = true})
+-- copy
+vim.keymap.set('n', '<C-c>', 'y', {noremap = true, silent = true})
+-- paste
+vim.keymap.set('n', '<C-v>', 'p', {noremap = true, silent = true})
+
