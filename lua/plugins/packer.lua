@@ -16,11 +16,11 @@ return require('packer').startup(function(use)
     }
 	use "terrortylor/nvim-comment" -- Comment lines of code with <C-ku> <C-kc>
 	use 'nvim-lua/plenary.nvim' -- Common utilities
-	use 'onsails/lspkind-nvim' -- vscode-like pictograms
-	use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
-	use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-	use 'hrsh7th/nvim-cmp' -- Completion
-	use 'neovim/nvim-lspconfig' -- LSP
+	-- use 'onsails/lspkind-nvim' -- vscode-like pictograms
+	-- use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+	-- use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+	-- use 'hrsh7th/nvim-cmp' -- Completion
+	-- use 'neovim/nvim-lspconfig' -- LSP
 	use 'L3MON4D3/LuaSnip' -- Snippet engine
 	use 'm4xshen/autoclose.nvim'  -- Auto close [] {} '' ""
 	use 'nvim-tree/nvim-web-devicons' -- Icons
@@ -73,6 +73,7 @@ return require('packer').startup(function(use)
     		}
   		end
 	}
+	use {'neoclide/coc.nvim', branch = 'release'}
 	--use({
 	--	"utilyre/barbecue.nvim",
 	--	tag = "*",

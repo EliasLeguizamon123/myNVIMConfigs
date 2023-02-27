@@ -1,8 +1,11 @@
--- try basic conf
-vim.g.mapleader = ','
+local remap = vim.keymap.set
+local leader = vim.g.leader
+local opt = vim.opt 
 
+-- leader assign
+leader = ','
 
-
+-- plugins calls
 require('plugins/packer')
 require('plugins/nord')
 require('plugins/tree')
@@ -16,40 +19,41 @@ require('plugins/pluffie')
 require('plugins/alpha')
 require('plugins/telescope')
 require('plugins/null')
-require('plugins/lspsaga')
+-- require('plugins/lspsaga')
 require('plugins/blankline')
-require('plugins/snippet')
+--require('plugins/snippet')
 require('plugins/swenv')
 require('plugins/colorizer')
 require('plugins/comment')
 --require('plugins/cosmic')
 require('plugins/wilder')
 
-vim.opt.relativenumber = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.autoindent = true
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.gdefault = true
+-- opt configs
+opt.relativenumber = true
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.autoindent = true
+opt.ignorecase = true
+opt.smartcase = true
+opt.gdefault = true
 
 
 -- shorcuts
-
 -- save in ctrl + s
-vim.keymap.set('n', '<C-s>', ':w<CR>', {noremap = true, silent = true})
+remap('n', '<C-s>', ':w<CR>', {noremap = true, silent = true})
 -- move up with alt up
-vim.keymap.set('n', '<A-Up>', ':m -2<CR>', {noremap = true, silent = true})
+remap('n', '<A-Up>', ':m -2<CR>', {noremap = true, silent = true})
 -- mode down with alt down
-vim.keymap.set('n', '<A-Down>', ':m +1<CR>', {noremap = true, silent = true})
+remap('n', '<A-Down>', ':m +1<CR>', {noremap = true, silent = true})
 -- close on esc
-vim.keymap.set('n', '<esc>', ':q!<CR>', {noremap = true, silent = true})
+remap('n', '<esc>', ':q!<CR>', {noremap = true, silent = true})
 -- Indent
-vim.keymap.set('n', '<TAB>', '>>', {noremap = true, silent = true})
+remap('n', '<TAB>', '>>', {noremap = true, silent = true})
 -- Remove Indent
-vim.keymap.set('n', '<S-TAB>', '<<', {noremap = true, silent = true})
+remap('n', '<S-TAB>', '<<', {noremap = true, silent = true})
 -- copy
-vim.keymap.set('n', '<C-c>', 'y', {noremap = true, silent = true})
+remap('n', '<C-c>', 'y', {noremap = true, silent = true})
 -- paste
-vim.keymap.set('n', '<C-v>', 'p', {noremap = true, silent = true})
-
+remap('n', '<C-v>', 'p', {noremap = true, silent = true})
+-- cut
+remap('n', '<C-x>', 'd', {noremap = true, silent = true})
