@@ -16,11 +16,6 @@ return require('packer').startup(function(use)
     }
 	use "terrortylor/nvim-comment" -- Comment lines of code with <C-ku> <C-kc>
 	use 'nvim-lua/plenary.nvim' -- Common utilities
-	-- use 'onsails/lspkind-nvim' -- vscode-like pictograms
-	-- use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
-	-- use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-	-- use 'hrsh7th/nvim-cmp' -- Completion
-	-- use 'neovim/nvim-lspconfig' -- LSP
 	use 'L3MON4D3/LuaSnip' -- Snippet engine
 	use 'm4xshen/autoclose.nvim'  -- Auto close [] {} '' ""
 	use 'nvim-tree/nvim-web-devicons' -- Icons
@@ -32,11 +27,6 @@ return require('packer').startup(function(use)
 	use 'NvChad/nvim-colorizer.lua' -- add color to #HEXA
 	use "rafamadriz/friendly-snippets" -- for more snippets
 	use 'AckslD/swenv.nvim' -- Switch python venvs
-	use { 
-        'glepnir/lspsaga.nvim',    -- LSP UI for different functionalities
-        branch = 'main',
-        requires = 'nvim-tree/nvim-web-devicons'
-    }
 	use {
   		'nvim-telescope/telescope.nvim', tag = '0.1.1',
   		requires = { {'nvim-lua/plenary.nvim'} }
@@ -66,23 +56,8 @@ return require('packer').startup(function(use)
 	use {
  		"folke/twilight.nvim",
   		config = function()
-    		require("twilight").setup {
-      			-- your configuration comes here
-      			-- or leave it empty to use the default settings
-      			-- refer to the configuration section below
-    		}
+    		require("twilight").setup {}
   		end
 	}
 	use {'neoclide/coc.nvim', branch = 'release'}
-	--use({
-	--	"utilyre/barbecue.nvim",
-	--	tag = "*",
-	--	requires = {
-	--			"SmiteshP/nvim-navic",
-	--			"nvim-tree/nvim-web-devicons", -- optional dependency
-	--	},
-	--	config = function()
-	--		require("barbecue").setup()
-	--	end,
-	--})
 end)
