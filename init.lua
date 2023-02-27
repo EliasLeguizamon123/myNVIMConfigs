@@ -5,7 +5,7 @@ local opt = vim.opt
 -- leader assign
 leader = ','
 
--- plugins calls
+-- plugins 
 require('plugins/packer')
 require('plugins/nord')
 require('plugins/tree')
@@ -57,3 +57,5 @@ remap('n', '<C-c>', 'y', {noremap = true, silent = true})
 remap('n', '<C-v>', 'p', {noremap = true, silent = true})
 -- cut
 remap('n', '<C-x>', 'd', {noremap = true, silent = true})
+-- delete word 
+remap('i', '<C-H>', '<C-W>', {noremap = true, silent = true})
