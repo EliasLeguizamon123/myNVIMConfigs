@@ -1,0 +1,14 @@
+{
+	"languageserver": {
+		"dockerfile": {
+			"command": "docker-langserver",
+			"filetypes": ["dockerfile"],
+			"args": ["--stdio"]
+		},
+		"rust": {
+			"command": "rust-analyzer",
+			"filetypes": ["rust"],
+			"rootPatterns": ["Cargo.toml"]
+		}
+	}
+}

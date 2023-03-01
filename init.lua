@@ -19,14 +19,12 @@ require('plugins/pluffie')
 require('plugins/alpha')
 require('plugins/telescope')
 require('plugins/null')
--- require('plugins/lspsaga')
 require('plugins/blankline')
---require('plugins/snippet')
 require('plugins/swenv')
 require('plugins/colorizer')
 require('plugins/comment')
---require('plugins/cosmic')
 require('plugins/wilder')
+require('plugins/coc')
 
 -- opt configs
 opt.relativenumber = true
@@ -48,9 +46,9 @@ remap('n', '<A-Down>', ':m +1<CR>', {noremap = true, silent = true})
 -- close on esc
 remap('n', '<esc>', ':q!<CR>', {noremap = true, silent = true})
 -- Indent
-remap('n', '<TAB>', '>>', {noremap = true, silent = true})
+-- remap('n', '<TAB>', '>>', {noremap = true, silent = true})
 -- Remove Indent
-remap('n', '<S-TAB>', '<<', {noremap = true, silent = true})
+-- remap('n', '<S-TAB>', '<<', {noremap = true, silent = true})
 -- copy
 remap('n', '<C-c>', 'y', {noremap = true, silent = true})
 -- paste
