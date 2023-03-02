@@ -8,6 +8,7 @@ local pluginCount = vim.fn.len(vim.fn.globpath('~/.local/share/nvim/site/pack/pa
 local plugins = ' Packages installed ' .. pluginCount .. ' ' 
 
 dashboard.section.header.val = {
+		'',
     	'────────────────────────────────────────┌───────────────────────────────────────',
     	'──────────────────────────────────────┌▄╨▀▄─────────────────────────────────────',
     	'───────────────────────────────────┌╔▄└▐▓╕─▀█▄──────────────────────────────────',
@@ -47,8 +48,9 @@ dashboard.section.header.val = {
     	'────────────────────────────────────────────────────────────────────────────────',
 		'─────life before death strength before weakness journey before destination ─────',
 		'────────────────────────────────────────────────────────────────────────────────',
-
 }
+
+dashboard.section.header.opts.hl = "Debug"
 
 dashboard.section.buttons.val = {
 			dashboard.button("e", "	>	New file", ":ene <BAR> startinsert <CR>"),
@@ -56,6 +58,8 @@ dashboard.section.buttons.val = {
 			dashboard.button("r", "	>	Recent file", ":Telescope oldfiles<CR>"),
 			dashboard.button("q", "	>	Close nvim", ":q!<CR>"),
 }
+
+dashboard.section.buttons.opts.hl = 'Debug'
 
 dashboard.section.footer.val = {
 	'',
