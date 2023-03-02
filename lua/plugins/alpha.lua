@@ -60,6 +60,7 @@ dashboard.section.buttons.val = {
 }
 
 dashboard.section.buttons.opts.hl = 'Debug'
+dashboard.section.footer.opts.hl = "String"
 
 dashboard.section.footer.val = {
 	'',
