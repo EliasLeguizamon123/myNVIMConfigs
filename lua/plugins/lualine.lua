@@ -1,7 +1,13 @@
+local customNord = require'lualine.themes.nord'
+
+customNord.normal.a.bg = '#bf616a'
+customNord.insert.a.bg = '#ebcb8b'
+customNord.visual.a.bg = '#eceff4'
+
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'auto',
+    theme = customNord,
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
@@ -38,3 +44,4 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+
