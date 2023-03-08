@@ -1,6 +1,6 @@
 local config = {
     view = {
-		width = 20,
+		width = 35,
         mappings = {
             custom_only = false,
             list = {
