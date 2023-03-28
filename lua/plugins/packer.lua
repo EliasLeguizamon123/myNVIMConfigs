@@ -5,7 +5,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim' -- packer
-	use 'shaunsingh/nord.nvim' -- theme
+	use 'Mofiqul/dracula.nvim' -- theme
 	use 'nvim-tree/nvim-tree.lua' -- tree left view
 	use { "SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig" } -- tabs up
 	use 'romgrk/barbar.nvim'  -- tabs up
