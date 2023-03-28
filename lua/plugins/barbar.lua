@@ -11,7 +11,7 @@ map('n', '<A->>', '<Cmd>BufferMoveNext<CR>', opts)
 --Close Actual Buffer
 map('n', '<A-x>', '<Cmd>BufferClose<CR>', opts)
 -- Close all but pinned dont
-map('n', '<A-X>', '<Cmd>BufferCloseAllButPinned<CR>')
+map('n', '<A-X>', '<Cmd>BufferCloseAllButPinned<CR>', opts)
 -- Pin actual Buffer
 map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 

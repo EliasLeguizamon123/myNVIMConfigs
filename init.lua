@@ -46,9 +46,9 @@ remap('n', '<A-Down>', ':m +1<CR>', {noremap = true, silent = true})
 -- close on esc
 remap('n', '<esc>', ':q!<CR>', {noremap = true, silent = true})
 -- Indent
--- remap('n', '<TAB>', '>>', {noremap = true, silent = true})
+remap('v', '<TAB>', '>>', {noremap = true, silent = true})
 -- Remove Indent
--- remap('n', '<S-TAB>', '<<', {noremap = true, silent = true})
+remap('v', '<S-TAB>', '<<', {noremap = true, silent = true})
 -- copy
 remap('n', '<C-c>', 'y', {noremap = true, silent = true})
 -- paste
