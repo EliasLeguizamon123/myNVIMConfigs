@@ -6,3 +6,5 @@ dracula.setup({
 	lualine_bg_color = "#4475A",
 	italic_comment = true,
 })
+
+vim.cmd[[colorscheme dracula]]
