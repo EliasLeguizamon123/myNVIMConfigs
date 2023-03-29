@@ -1,13 +1,13 @@
-local customNord = require'lualine.themes.nord'
+-- local customNord = require'lualine.themes.nord'
 
-customNord.normal.a.bg = '#bf616a'
-customNord.insert.a.bg = '#ebcb8b'
-customNord.visual.a.bg = '#eceff4'
+-- customNord.normal.a.bg = '#bf616a'
+-- customNord.insert.a.bg = '#ebcb8b'
+-- customNord.visual.a.bg = '#eceff4'
 
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = customNord,
+    theme = 'dracula-nvim',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
