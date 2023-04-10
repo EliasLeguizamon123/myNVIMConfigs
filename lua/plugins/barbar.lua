@@ -32,17 +32,19 @@ require("bufferline").setup{
 	auto_hide = true,
 	tabpages = true,
 	animation = true,
-	custom_icon_colors = true, 
-	icon_pinned = '󰐅',
-	icon_close_tab = '󰅚',
-	icon_close_tab_modified = '',
-	icon_separator_active = '',
-	icon_separator_inactive = '',
+	custom_icon_colors = true,
 	no_name_title = 'Inactive shit',
-	diagnostics = {
-		{enable = true, icon = 'FF'},
-		{enable = true, icon = 'WR'},
-		{enable = true, icon = 'IF'},
-		{enable = true, icon = 'HT'},
-	},
+	icons = {
+
+		pinned = {button = '󰐅', filename = true, separator = {right = ''}},
+		inactive = {button = '󰅚'},
+		modified = {button = ''},
+		separator = {left = '', right = ''},
+		diagnostics = {
+			{enable = true, icon = 'FF'},
+			{enable = true, icon = 'WR'},
+			{enable = true, icon = 'IF'},
+			{enable = true, icon = 'HT'},
+		},
+	}
 }
