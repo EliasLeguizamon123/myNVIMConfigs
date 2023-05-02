@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
 	use 'nvim-tree/nvim-web-devicons' -- Icons
 	use 'pluffie/neoproj' -- Open projects
 	use 'windwp/nvim-ts-autotag' -- Auto close tags
+	use 'folke/tokyonight.nvim' -- Theme Tokyonight
 	use 'nvim-treesitter/nvim-treesitter' -- treesitter
 	use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics
 	use 'lukas-reineke/indent-blankline.nvim' -- Indent blanklines

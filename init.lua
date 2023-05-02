@@ -7,7 +7,7 @@ leader = ','
 
 -- plugins 
 require('plugins/packer')
-require('plugins/dracula')
+require('plugins/tokyonight')
 require('plugins/tree')
 require('plugins/navic')
 require('plugins/barbar')
